@@ -14,6 +14,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: kubia-svc
+                name: kubia
                 port:
                   number: 80
