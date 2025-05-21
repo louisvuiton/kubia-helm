@@ -14,6 +14,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: {{ index .Values "app-name" }}-svc
+                name: {{ index .Values "app-name" }}
                 port:
                   number: 80
