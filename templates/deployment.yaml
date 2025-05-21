@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ index .Values "name" }}
+  name: {{ index .Values "app-name" }}
   labels:
-    app: {{ index .Values "name" }}
+    app: {{ index .Values "app-name" }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ index .Values "name" }}
+      app: {{ index .Values "app-name" }}
   template:
     metadata:
       labels:
-        app: {{ index .Values "name" }}
+        app: {{ index .Values "app-name" }}
     spec:
       containers:
         - name: kubia

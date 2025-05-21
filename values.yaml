@@ -1,3 +1,4 @@
+app-name: kubia
 replicaCount: 3
 image:
   repository: luksa/kubia
