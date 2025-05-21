@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ index .Values "app-name" }}
+  namespace: argocd
   labels:
     app: {{ index .Values "app-name" }}
 spec:
